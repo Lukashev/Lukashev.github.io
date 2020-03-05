@@ -6,11 +6,12 @@ import { productList, productLabelList } from "./mock";
 export const ContextApp = React.createContext({});
 
 export const initialState = {
-    productList,
+    productList: productList.concat(productList),
     productLabelList
 };
 
 export const reducer = (state: StoreState, action: StoreAction) => {
+    /* it's not necessary, just for example */
     switch (action.type) {
         case 'LIKE_PRODUCT': 
             return {
