@@ -7,7 +7,7 @@ import { Product as ProductItem } from '../interfaces/Product'
 import Product from './Product'
 
 const AppMain = (): JSX.Element => {
-    const { state } = useContext(ContextApp) as { state: StoreState}
+    const { state } = useContext(ContextApp) as { state: StoreState }
     const { productLabelList, productList } = state
     const labelList = productLabelList.map((label: string, i: number) => {
         return (
@@ -24,9 +24,9 @@ const AppMain = (): JSX.Element => {
         <div className='app-main'>
             <div className="app-main__sidebar">
                 <InfoPanel list={labelList} />
-                <div className="app-main__product-list">
-                    {productList.map((productItem: ProductItem, i: number) => <Product key={i} product={productItem} />)}
-                </div>
+            </div>
+            <div className="app-main__product-list">
+                {productList.map((productItem: ProductItem, i: number) => <Product key={i} product={productItem} />)}
             </div>
         </div>
     )

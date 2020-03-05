@@ -49,7 +49,7 @@ const ProductSimpleItem = (props: Partial<ProductItem>): JSX.Element => {
 const ProductSeller = (props: { seller: Seller }): JSX.Element => {
     const { seller } = props
     return (
-        <a href='#' className='product-item__link'>
+        <a href='/' className='product-item__link'>
             <Typography>
                 {seller}
             </Typography>

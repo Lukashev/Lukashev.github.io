@@ -15,17 +15,37 @@ html, body {
     height: 100%;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .app-main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
     &__sidebar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        align-self: flex-end;
+        width: 100%;
+        max-width: 215px;
+        & .info-panel {
+            width: 100%;
+            margin-bottom: 17px;
+            &__item {
+                padding-left: 11px;
+                & span {
+                    vertical-align: sub;
+                }
+            }
+        }
     }
     &__product-list {
         display: flex;
         justify-content: space-between;
+        overflow-x: scroll;
+        height: 100%;
     }
 }
