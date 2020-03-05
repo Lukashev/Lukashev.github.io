@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+.app-main {
+    display: flex;
+    justify-content: space-between;
+    &__sidebar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    &__product-list {
+        display: flex;
+        justify-content: space-between;
+    }
+}

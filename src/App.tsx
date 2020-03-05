@@ -1,26 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useReducer } from 'react'
+import { reducer, initialState, ContextApp } from './store/reducer'
+import AppMain from './components/AppMain'
 
-function App() {
+const App = (): JSX.Element => {
+  const [state, dispatch] = useReducer(reducer, initialState)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ContextApp.Provider value={{ dispatch, state }}>
+      <AppMain />
+    </ContextApp.Provider>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,16 @@
+$primary-color: #FFFFFF;
+$secondary-color: #F4F2EE;
+
+.info-panel {
+    &__item {
+        padding: 5px 10px 0;
+        height: 31px;
+        overflow-x: hidden;
+        &:nth-child(odd) {
+           background-color: $secondary-color; 
+        }
+        &:nth-child(even) {
+            background-color: $primary-color;
+        }
+    }
+}
