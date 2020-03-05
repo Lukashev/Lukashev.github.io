@@ -4,6 +4,14 @@
             &__image-block {
                 margin-left: 0;
             }
+            &__title {
+                padding-left: 0;
+            }
+        }
+        & .info-panel {
+            &__item {
+                padding-left: 0;
+            }
         }
     }
     &__image-block {
@@ -21,6 +29,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
     &__title {
         padding: 14px 45px 25px 19px;
