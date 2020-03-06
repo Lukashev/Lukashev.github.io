@@ -8,7 +8,7 @@ export const ContextApp = React.createContext({});
 export const initialState: StoreState = {
     productList: productList.concat(productList),
     loadedProducts: [],
-    productLabelList,
+    productLabelList
 };
 
 export const reducer = (state: StoreState, action: StoreAction): StoreState => {

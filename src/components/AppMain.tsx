@@ -10,7 +10,8 @@ const AppMain = (): JSX.Element => {
     const ref: RefObject<HTMLDivElement> = createRef()
     const { state, dispatch } = useContext(ContextApp) as { state: StoreState, dispatch: Function }
     const { productLabelList, productList, loadedProducts } = state
-    const [loadMore, setLoadMore] = useState(true);
+    const [loadMore, setLoadMore] = useState(true)
+    const [scrollHeight, setScrollHeight] = useState(0)
 
     const onScroll = (e: any) => {
         const { target: { scrollWidth, scrollLeft, clientWidth } } = e
@@ -25,7 +26,11 @@ const AppMain = (): JSX.Element => {
 
     useEffect(() => {
         const current = ref.current
-        if (current) current.addEventListener('scroll', onScroll)
+        if (current) {
+            console.log(Object.values(current).map(console.log))
+            setScrollHeight(current.offsetHeight - current.clientHeight)
+            current.addEventListener('scroll', onScroll)
+        }
         return () => {
             window.removeEventListener("scroll", onScroll)
         }
@@ -56,7 +61,7 @@ const AppMain = (): JSX.Element => {
     return (
         <div className='app-main'>
             <div className="app-main__sidebar">
-                <InfoPanel list={labelList} />
+                <InfoPanel list={labelList} marginBottom={65 + scrollHeight} />
             </div>
             <div className="app-main__product-list" ref={ref}>
                 {loadedProducts.map((productItem: ProductItem, i: number) => {
