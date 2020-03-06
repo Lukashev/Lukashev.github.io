@@ -1,38 +1,54 @@
 .product-item {
-    transition: all .5s ease;
     position: relative;
     &:hover {
-       &:before {
+        &:before {
             content: '';
             width: 100%;
-            height: 100%;
+            height: 89%;
             position: absolute;
             background: rgba(255, 188, 0, 0.1);
             background-blend-mode: multiply;
             border-radius: 8px;
             z-index: 1;
-       } 
-       & .product-item {
-           &__image-block {
-               background-color: transparent;
-           }
-       }
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        & .product-item {
+            &__image-block {
+                background-color: transparent;
+            }
+        }
+
+        & .info-panel {
+            &__item {
+                &:last-child {
+                    background-color: #FFF9E6;
+                    border-bottom-right-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                }
+            }
+        }
     }
+
     &:first-child {
         & .product-item {
             &__image-block {
                 margin-left: 0;
             }
+
             &__title {
                 padding-left: 0;
             }
         }
+
         & .info-panel {
             &__item {
                 padding-left: 0;
             }
         }
     }
+
     &__image-block {
         width: 183px;
         height: 193px;
@@ -45,27 +61,33 @@
         margin: 0 19px;
         z-index: 0;
     }
+
     &__price {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
+
     &__title {
         padding: 14px 45px 25px 19px;
     }
+
     &__rating {
         display: flex;
         align-items: center;
         margin-top: -6px;
+
         & i {
             font-size: 25px;
         }
+
         & span {
             margin-top: 5px;
             margin-left: 15px;
         }
     }
+
     & .info-panel {
         &__item {
             display: flex;
@@ -74,25 +96,33 @@
             padding-left: 19px;
         }
     }
+
     &__link span {
         color: #0000EE !important;
     }
+
     &__actions {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+
         &__basket-svg {
             margin-right: 10px;
             width: 20px;
         }
-        & .button:first-child, .button:last-child {
+
+        & .button:first-child,
+        .button:last-child {
             &:hover {
-               opacity: .5;
+                opacity: .5;
             }
-        } 
+        }
+
         & .button:last-child {
             display: flex;
             align-items: center;
+            width: 117px;
+            margin-right: 20px;
         }
     }
 }
