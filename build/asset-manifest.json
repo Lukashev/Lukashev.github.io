@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a3267820.chunk.css",
+    "main.js": "/static/js/main.a3d664fb.chunk.js",
+    "main.js.map": "/static/js/main.a3d664fb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bc8b9c81.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bc8b9c81.js.map",
+    "static/js/2.dfba0ebe.chunk.js": "/static/js/2.dfba0ebe.chunk.js",
+    "static/js/2.dfba0ebe.chunk.js.map": "/static/js/2.dfba0ebe.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.740d1c01d6fdf7ec805cbe8705ea15d9.js": "/precache-manifest.740d1c01d6fdf7ec805cbe8705ea15d9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a3267820.chunk.css.map": "/static/css/main.a3267820.chunk.css.map",
+    "static/js/2.dfba0ebe.chunk.js.LICENSE.txt": "/static/js/2.dfba0ebe.chunk.js.LICENSE.txt",
+    "static/media/basket.svg": "/static/media/basket.afea6c1e.svg",
+    "static/media/heart.svg": "/static/media/heart.8b0126c6.svg",
+    "static/media/product.png": "/static/media/product.f6e9a6f8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc8b9c81.js",
+    "static/js/2.dfba0ebe.chunk.js",
+    "static/css/main.a3267820.chunk.css",
+    "static/js/main.a3d664fb.chunk.js"
+  ]
+}
