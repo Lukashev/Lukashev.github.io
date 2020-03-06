@@ -1,0 +1,10 @@
+.button {
+    padding: 8px 15px;
+    margin: 15px 0;
+    height: 35px;
+    outline: none;
+    transition: all .5s ease;
+    &:hover {
+        cursor: pointer;
+    }
+}

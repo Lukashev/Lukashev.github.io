@@ -1,8 +1,12 @@
-import React, { memo, useCallback } from 'react'
+import React, { memo, useCallback, Fragment } from 'react'
 import { Product as ProductItem, Seller } from '../../interfaces/Product'
 import StarRatingComponent from 'react-star-rating-component'
 import Typography from '../Typography'
 import InfoPanel from '../InfoPanel'
+import Button from '../Button'
+/* import heart, basket svg */
+import heartSVG from '../../images/heart.svg'
+import basketSVG from '../../images/basket.svg'
 import './styles.scss'
 
 interface Props {
@@ -57,6 +61,30 @@ const ProductSeller = (props: { seller: Seller }): JSX.Element => {
     )
 }
 
+const ProductActions = (): JSX.Element => {
+    return (
+        <div className="product-item__actions">
+            <Button
+                border={`2px solid #FF9F9F`}
+            >
+                <img src={heartSVG} alt="heart_svg" />
+            </Button>
+            <Button backgroundColor={`#009900`}>
+                <Fragment>
+                    <img 
+                    src={basketSVG} 
+                    alt="basket_svg"
+                    className="product-item__actions__basket-svg" 
+                    />
+                    <Typography color={`#FFFFFF`}>
+                        {`Купить`}
+                    </Typography>
+                </Fragment>
+            </Button>
+        </div>
+    )
+}
+
 export const Product = memo((props: Props) => {
     const {
         product: {
@@ -70,7 +98,7 @@ export const Product = memo((props: Props) => {
             seller = 'Garda'
         }
     } = props
-    const getList = useCallback(
+    const setList = useCallback(
         () => {
             return [
                 <ProductRating starCount={5} value={rating} editing={false} />,
@@ -78,9 +106,8 @@ export const Product = memo((props: Props) => {
             ]
                 .concat([{ color }, { material }, { sizes }, { mechanism }].map(value => <ProductSimpleItem {...value} />))
                 .concat(<ProductSeller seller={seller} />)
-        },
-        [props.product],
-    )
+                .concat(<ProductActions />)
+        }, [])
     return (
         <div className='product-item'>
             <div className="product-item__image-block">
@@ -92,7 +119,7 @@ export const Product = memo((props: Props) => {
             <div className="product-item__title">
                 <Typography fontWeight={600}>{title}</Typography>
             </div>
-            <InfoPanel list={getList()} />
+            <InfoPanel list={setList()} />
         </div>
     )
 })

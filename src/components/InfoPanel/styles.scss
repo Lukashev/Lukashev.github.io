@@ -3,7 +3,7 @@ $secondary-color: #F4F2EE;
 
 .info-panel {
     &__item {
-        height: 31px;
+        min-height: 31px;
         overflow-x: hidden;
         &:nth-child(odd) {
            background-color: $secondary-color; 

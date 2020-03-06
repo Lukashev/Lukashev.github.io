@@ -1,4 +1,23 @@
 .product-item {
+    transition: all .5s ease;
+    position: relative;
+    &:hover {
+       &:before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: rgba(255, 188, 0, 0.1);
+            background-blend-mode: multiply;
+            border-radius: 8px;
+            z-index: 1;
+       } 
+       & .product-item {
+           &__image-block {
+               background-color: transparent;
+           }
+       }
+    }
     &:first-child {
         & .product-item {
             &__image-block {
@@ -24,6 +43,7 @@
         background-color: #F4F2EE;
         padding: 16px;
         margin: 0 19px;
+        z-index: 0;
     }
     &__price {
         width: 100%;
@@ -56,5 +76,23 @@
     }
     &__link span {
         color: #0000EE !important;
+    }
+    &__actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        &__basket-svg {
+            margin-right: 10px;
+            width: 20px;
+        }
+        & .button:first-child, .button:last-child {
+            &:hover {
+               opacity: .5;
+            }
+        } 
+        & .button:last-child {
+            display: flex;
+            align-items: center;
+        }
     }
 }
