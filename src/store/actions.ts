@@ -1,5 +1,8 @@
-export type StoreType = 'LIKE_PRODUCT' | 'BUY_PRODUCT'
+import { Product } from "../interfaces/Product";
+
+export type StoreType = 'SET_LOADED_PRODUCTS'
+
 export interface StoreAction {
     type: StoreType
-    payload: object
+    payload: Product[]
 }

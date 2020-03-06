@@ -7,7 +7,7 @@ interface Props {
     fontFamily?: FontFamily
     fontWeight?: number
     color?: string
-    children: string | number
+    children: string | number | boolean
     textDecoration: TextDecoration
 }
 

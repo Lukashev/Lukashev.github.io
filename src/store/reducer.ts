@@ -5,19 +5,20 @@ import { productList, productLabelList } from "./mock";
 
 export const ContextApp = React.createContext({});
 
-export const initialState = {
+export const initialState: StoreState = {
     productList: productList.concat(productList),
-    productLabelList
+    loadedProducts: [],
+    productLabelList,
 };
 
-export const reducer = (state: StoreState, action: StoreAction) => {
+export const reducer = (state: StoreState, action: StoreAction): StoreState => {
     /* it's not necessary, just for example */
     switch (action.type) {
-        case 'LIKE_PRODUCT': 
+        case 'SET_LOADED_PRODUCTS':
             return {
                 ...state,
-                ...action.payload
-            }    
+                loadedProducts: action.payload
+            }
         default:
             return state
     }

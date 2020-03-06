@@ -12,4 +12,5 @@ export interface Product {
     sizes?: string
     mechanism?: string
     seller?: Seller
+    canAddFavorite: boolean
 }

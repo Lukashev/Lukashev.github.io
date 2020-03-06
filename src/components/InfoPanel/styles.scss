@@ -5,9 +5,11 @@ $secondary-color: #F4F2EE;
     &__item {
         min-height: 31px;
         overflow-x: hidden;
+
         &:nth-child(odd) {
-           background-color: $secondary-color; 
+            background-color: $secondary-color;
         }
+
         &:nth-child(even) {
             background-color: $primary-color;
         }

@@ -6,6 +6,7 @@ interface Props {
     borderRadius?: number
     border?: string
     children: JSX.Element | string
+    width?: number | string
 }
 
 const Button = (props: Props) => {
@@ -20,7 +21,8 @@ const Button = (props: Props) => {
 Button.defaultProps = {
     backgroundColor: 'transparent',
     borderRadius: 4,
-    border: 'none'
+    border: 'none',
+    width: '100%'
 }
 
 export default Button

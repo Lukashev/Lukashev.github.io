@@ -13,7 +13,8 @@ export const productList: Product[] = [
         material: 'Ткань',
         sizes: 'ш. 349 х в. 234 х г. 323',
         mechanism: 'Французская раскладушка',
-        seller: 'Огого'
+        seller: 'Огого',
+        canAddFavorite: true
     },
     {
         id: 2,
@@ -26,7 +27,8 @@ export const productList: Product[] = [
         material: 'Ткань',
         sizes: 'ш. 349 х в. 234 х г. 323',
         mechanism: 'Французская раскладушка',
-        seller: 'Laska Family'
+        seller: 'Laska Family',
+        canAddFavorite: true
     },
     {
         id: 3,
@@ -39,7 +41,8 @@ export const productList: Product[] = [
         material: 'Ткань',
         sizes: 'ш. 349 х в. 234 х г. 323',
         mechanism: 'Французская раскладушка',
-        seller: 'Garda'
+        seller: 'Garda',
+        canAddFavorite: false
     },
     {
         id: 4,
@@ -52,7 +55,8 @@ export const productList: Product[] = [
         material: 'Ткань',
         sizes: 'ш. 349 х в. 234 х г. 323',
         mechanism: 'Французская раскладушка',
-        seller: 'DG Home'
+        seller: 'DG Home',
+        canAddFavorite: true
     },
     {
         id: 5,
@@ -65,7 +69,8 @@ export const productList: Product[] = [
         material: 'Ткань',
         sizes: 'ш. 349 х в. 234 х г. 323',
         mechanism: 'Французская раскладушка',
-        seller: 'Laska Family'
+        seller: 'Laska Family',
+        canAddFavorite: true
     },
     {
         id: 6,
@@ -78,7 +83,8 @@ export const productList: Product[] = [
         material: 'Ткань',
         sizes: 'ш. 349 х в. 234 х г. 323',
         mechanism: 'Французская раскладушка',
-        seller: 'DG Home'
+        seller: 'DG Home',
+        canAddFavorite: true
     }
 ]
 

@@ -1,5 +1,6 @@
 .product-item {
     position: relative;
+
     &:hover {
         &:before {
             content: '';
@@ -9,7 +10,6 @@
             background: rgba(255, 188, 0, 0.1);
             background-blend-mode: multiply;
             border-radius: 8px;
-            z-index: 1;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
         }
@@ -32,19 +32,12 @@
     }
 
     &:first-child {
-        & .product-item {
-            &__image-block {
-                margin-left: 0;
-            }
-
-            &__title {
-                padding-left: 0;
-            }
-        }
 
         & .info-panel {
+            width: 255px;
+
             &__item {
-                padding-left: 0;
+                padding-left: 19px;
             }
         }
     }
@@ -121,6 +114,7 @@
         & .button:last-child {
             display: flex;
             align-items: center;
+            justify-content: center;
             width: 117px;
             margin-right: 20px;
         }

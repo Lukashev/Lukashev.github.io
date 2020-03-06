@@ -61,20 +61,22 @@ const ProductSeller = (props: { seller: Seller }): JSX.Element => {
     )
 }
 
-const ProductActions = (): JSX.Element => {
+const ProductActions = (props: { canAddFavorite: boolean }): JSX.Element => {
+    const { canAddFavorite } = props
     return (
         <div className="product-item__actions">
-            <Button
+            {canAddFavorite && <Button
+                width={51}
                 border={`2px solid #FF9F9F`}
             >
                 <img src={heartSVG} alt="heart_svg" />
-            </Button>
-            <Button backgroundColor={`#009900`}>
+            </Button>}
+            <Button width={canAddFavorite ? 117 : '100%'} backgroundColor={`#009900`}>
                 <Fragment>
-                    <img 
-                    src={basketSVG} 
-                    alt="basket_svg"
-                    className="product-item__actions__basket-svg" 
+                    <img
+                        src={basketSVG}
+                        alt="basket_svg"
+                        className="product-item__actions__basket-svg"
                     />
                     <Typography color={`#FFFFFF`}>
                         {`Купить`}
@@ -95,6 +97,7 @@ export const Product = memo((props: Props) => {
             material,
             sizes,
             mechanism,
+            canAddFavorite,
             seller = 'Garda'
         }
     } = props
@@ -106,7 +109,7 @@ export const Product = memo((props: Props) => {
             ]
                 .concat([{ color }, { material }, { sizes }, { mechanism }].map(value => <ProductSimpleItem {...value} />))
                 .concat(<ProductSeller seller={seller} />)
-                .concat(<ProductActions />)
+                .concat(<ProductActions canAddFavorite={canAddFavorite} />)
         }, [])
     return (
         <div className='product-item'>
