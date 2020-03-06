@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/inmyroom_test/static/css/main.a3267820.chunk.css",
-    "main.js": "/inmyroom_test/static/js/main.c11877bd.chunk.js",
-    "main.js.map": "/inmyroom_test/static/js/main.c11877bd.chunk.js.map",
-    "runtime-main.js": "/inmyroom_test/static/js/runtime-main.26f795a8.js",
-    "runtime-main.js.map": "/inmyroom_test/static/js/runtime-main.26f795a8.js.map",
-    "static/js/2.dfba0ebe.chunk.js": "/inmyroom_test/static/js/2.dfba0ebe.chunk.js",
-    "static/js/2.dfba0ebe.chunk.js.map": "/inmyroom_test/static/js/2.dfba0ebe.chunk.js.map",
-    "index.html": "/inmyroom_test/index.html",
-    "precache-manifest.2677c376886333df8eedf542d0f5e874.js": "/inmyroom_test/precache-manifest.2677c376886333df8eedf542d0f5e874.js",
-    "service-worker.js": "/inmyroom_test/service-worker.js",
-    "static/css/main.a3267820.chunk.css.map": "/inmyroom_test/static/css/main.a3267820.chunk.css.map",
-    "static/js/2.dfba0ebe.chunk.js.LICENSE.txt": "/inmyroom_test/static/js/2.dfba0ebe.chunk.js.LICENSE.txt",
-    "static/media/basket.svg": "/inmyroom_test/static/media/basket.afea6c1e.svg",
-    "static/media/heart.svg": "/inmyroom_test/static/media/heart.8b0126c6.svg",
-    "static/media/product.png": "/inmyroom_test/static/media/product.f6e9a6f8.png"
+    "main.css": "/inmyroom-test/static/css/main.a3267820.chunk.css",
+    "main.js": "/inmyroom-test/static/js/main.92277309.chunk.js",
+    "main.js.map": "/inmyroom-test/static/js/main.92277309.chunk.js.map",
+    "runtime-main.js": "/inmyroom-test/static/js/runtime-main.cb6188ac.js",
+    "runtime-main.js.map": "/inmyroom-test/static/js/runtime-main.cb6188ac.js.map",
+    "static/js/2.dfba0ebe.chunk.js": "/inmyroom-test/static/js/2.dfba0ebe.chunk.js",
+    "static/js/2.dfba0ebe.chunk.js.map": "/inmyroom-test/static/js/2.dfba0ebe.chunk.js.map",
+    "index.html": "/inmyroom-test/index.html",
+    "precache-manifest.c721ef2be8032f516dc029b869810bca.js": "/inmyroom-test/precache-manifest.c721ef2be8032f516dc029b869810bca.js",
+    "service-worker.js": "/inmyroom-test/service-worker.js",
+    "static/css/main.a3267820.chunk.css.map": "/inmyroom-test/static/css/main.a3267820.chunk.css.map",
+    "static/js/2.dfba0ebe.chunk.js.LICENSE.txt": "/inmyroom-test/static/js/2.dfba0ebe.chunk.js.LICENSE.txt",
+    "static/media/basket.svg": "/inmyroom-test/static/media/basket.afea6c1e.svg",
+    "static/media/heart.svg": "/inmyroom-test/static/media/heart.8b0126c6.svg",
+    "static/media/product.png": "/inmyroom-test/static/media/product.f6e9a6f8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.26f795a8.js",
+    "static/js/runtime-main.cb6188ac.js",
     "static/js/2.dfba0ebe.chunk.js",
     "static/css/main.a3267820.chunk.css",
-    "static/js/main.c11877bd.chunk.js"
+    "static/js/main.92277309.chunk.js"
   ]
 }
