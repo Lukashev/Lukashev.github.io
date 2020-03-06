@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4155e85ce4f1d708b6624ce9e3a0306b",
+    "revision": "630db9ebfb4f713df8a53c0fc57cb8f2",
     "url": "/inmyroom-test/index.html"
   },
   {
-    "revision": "fcb1f8159f9b807e252d",
-    "url": "/inmyroom-test/static/css/main.2fc6062a.chunk.css"
+    "revision": "5cf5a228e3ce41e522cc",
+    "url": "/inmyroom-test/static/css/main.93b50399.chunk.css"
   },
   {
     "revision": "8b142fac0b54b9714d00",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/inmyroom-test/static/js/2.dfba0ebe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fcb1f8159f9b807e252d",
-    "url": "/inmyroom-test/static/js/main.92277309.chunk.js"
+    "revision": "5cf5a228e3ce41e522cc",
+    "url": "/inmyroom-test/static/js/main.2ec5f4c0.chunk.js"
   },
   {
     "revision": "01567d159da6c17bb3b9",
