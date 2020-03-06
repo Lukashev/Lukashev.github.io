@@ -34,7 +34,6 @@ const AppMain = (): JSX.Element => {
     const getData = (load: boolean) => {
         /* There can be API call */
         if (load) {
-            console.log('LOAD')
             dispatch({
                 type: 'SET_LOADED_PRODUCTS',
                 payload: loadedProducts.concat(productList.slice(loadedProducts.length, loadedProducts.length + 4))

@@ -42,6 +42,14 @@
         }
     }
 
+    &:last-child {
+        & .info-panel {
+            &__item {
+                padding-right: 19px;
+            }
+        }
+    }
+
     &__image-block {
         width: 183px;
         height: 193px;
@@ -109,6 +117,11 @@
             &:hover {
                 opacity: .5;
             }
+        }
+
+        & .button:first-child {
+            display: flex;
+            justify-content: center;
         }
 
         & .button:last-child {
